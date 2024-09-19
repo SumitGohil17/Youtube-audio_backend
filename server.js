@@ -20,7 +20,7 @@ app.post('/convert', async (req, res) => {
     }
 
     const outputFileName = `${uuidv4()}.mp3`;
-    const outputPath = path.resolve(__dirname, outputFileName);
+    const outputPath = path.resolve('/tmp', outputFileName); // Changed to use /tmp for temporary storage
 
     const stream = ytdl(url, {
         quality: 'highestaudio',
