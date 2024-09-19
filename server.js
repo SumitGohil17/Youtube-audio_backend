@@ -7,7 +7,7 @@ const { v4: uuidv4 } = require('uuid');
 const cors = require('cors');
 
 // Set the path to ffmpeg if it's not in the default PATH
-const ffmpegPath = 'D:/cheat/ffmpeg-6.1.1-essentials_build/bin/ffmpeg.exe';
+const ffmpegPath = 'D:/cheat/ffmpeg-6.1.1-essentials_build/bin';
 ffmpeg.setFfmpegPath(ffmpegPath);
 
 const app = express();
